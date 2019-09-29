@@ -1,0 +1,162 @@
+html {
+  background:#373737;
+}
+
+.hero {
+  height:100vh;
+  width:100%;
+  background:url("/web/20190127001747im_/http://tim-whitaker.com/images/mountain.jpg") no-repeat;
+  background-size:cover;
+}
+
+.hero #snow {
+  position:absolute;
+  width:100%;
+  height:100vh;
+}
+
+.hero #intro {
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:50%;
+  max-width:640px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.hero #intro img {
+  width:100%;
+}
+
+.hero .portfolio-link {
+  color:white;
+  font-size:2rem;
+  position:absolute;
+  bottom:5%;
+  left:50%;
+  transform:translate(-50%, 0);
+  -moz-transform:translate(-50%, 0);
+  -webkit-transform:translate(-50%, 0);
+  -o-transform:translate(-50%, 0);
+  -ms-transform:translate(-50%, 0);  
+  text-shadow: 3px 3px 5px rgba(0,0,0,0.5);  
+  -moz-text-shadow: 3px 3px 5px rgba(0,0,0,0.5);  
+  -webkit-text-shadow: 3px 3px 5px rgba(0,0,0,0.5);  
+  -o-text-shadow: 3px 3px 5px rgba(0,0,0,0.5);  
+  -ms-text-shadow: 3px 3px 5px rgba(0,0,0,0.5);    
+}
+
+main #portfolio {
+  background:rgb(240,240,240);
+  padding-bottom:20px;
+}
+
+main #portfolio .wrapper {
+  max-width:1024px;
+  width:100%;
+  margin:0 auto;
+  padding:0 10px;
+}
+
+main #portfolio .wrapper h1 {
+  margin:0;
+  padding:20px 0;
+  font-size:4rem;
+  font-family:ballpark, sans-serif;
+  font-weight:normal;
+  text-align:center;
+  color:black;
+  text-shadow: 1px 1px 0 #fff,-1px -1px 0 #fff, 4px 4px 0 rgba(0,0,0,.3);
+  -moz-text-shadow: 1px 1px 0 #fff,-1px -1px 0 #fff, 4px 4px 0 rgba(0,0,0,.3);
+  -webkit-text-shadow: 1px 1px 0 #fff,-1px -1px 0 #fff, 4px 4px 0 rgba(0,0,0,.3);
+  -o-text-shadow: 1px 1px 0 #fff,-1px -1px 0 #fff, 4px 4px 0 rgba(0,0,0,.3);
+  -ms-text-shadow: 1px 1px 0 #fff,-1px -1px 0 #fff, 4px 4px 0 rgba(0,0,0,.3);
+}
+
+main #about-me {
+  background:rgb(250,250,250);
+  padding-bottom:20px;
+}
+
+main #about-me .wrapper {
+  width:100%;
+  max-width:800px;
+  margin:0 auto;
+  padding:0 10px;
+}
+
+main #about-me .wrapper h1 {
+  margin:0;
+  padding:20px 0;
+  font-size:4rem;
+  font-family:ballpark, sans-serif;
+  font-weight:normal;
+  text-align:center;
+  color:black;
+  text-shadow: 1px 1px 0 #fff,-1px -1px 0 #fff, 4px 4px 0 rgba(0,0,0,.3);
+  -moz-text-shadow: 1px 1px 0 #fff,-1px -1px 0 #fff, 4px 4px 0 rgba(0,0,0,.3);
+  -webkit-text-shadow: 1px 1px 0 #fff,-1px -1px 0 #fff, 4px 4px 0 rgba(0,0,0,.3);
+  -o-text-shadow: 1px 1px 0 #fff,-1px -1px 0 #fff, 4px 4px 0 rgba(0,0,0,.3);
+  -ms-text-shadow: 1px 1px 0 #fff,-1px -1px 0 #fff, 4px 4px 0 rgba(0,0,0,.3);
+}
+
+main #about-me .wrapper img {
+  width:100%;
+  display:block;
+}
+
+main #about-me .wrapper p {
+  line-height:1.4;
+  font-size:16px;
+}
+
+.grid {
+  width:100%;
+}
+
+.grid .grid-item, .grid .grid-sizer {
+  width:calc((100% - 40px) / 3);
+}
+
+.grid .grid-item {
+  margin-bottom:20px;
+  box-shadow:0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.grid .grid-item img {
+  width:100%;
+  display:block;
+}
+
+@media screen and (max-width: 840px) {
+  .hero {
+    height:80vh;
+  }
+  .hero:before {
+    height:80vh;
+  }
+  .hero #intro {
+    top:40%;
+    width:75%;
+  }
+  .hero .portfolio-link {
+    bottom:25%;
+  }
+  
+  .grid .grid-item, .grid .grid-sizer {
+    width:calc((100% - 20px) / 2);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero #intro {
+    width:100%;
+  }
+  
+  .grid .grid-item, .grid .grid-sizer {
+    width:calc(100%);
+  }
+}
